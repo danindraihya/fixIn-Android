@@ -20,6 +20,7 @@ import retrofit2.Response;
 
 public class Buatakun extends AppCompatActivity {
 
+    Integer idBengkel, jenisUser;
     EditText username, email, password;
     Button buttonDaftar;
     ProgressDialog pd;
@@ -43,21 +44,23 @@ public class Buatakun extends AppCompatActivity {
                 pd.setCancelable(false);
                 pd.show();
 
+
+                jenisUser = 1;
                 String susername = username.getText().toString();
                 String semail = email.getText().toString();
                 String spassword = password.getText().toString();
 
                 ApiRequestUser api = Retroserver.getClient().create(ApiRequestUser.class);
 
-                Call<ResponsModel> sendData = api.sendUser(1, 1, susername, spassword, semail);
+                Call<ResponsModel> sendData = api.sendUser(idBengkel, jenisUser, susername, spassword, semail);
                 sendData.enqueue(new Callback<ResponsModel>() {
                     @Override
                     public void onResponse(Call<ResponsModel> call, Response<ResponsModel> response) {
                         pd.hide();
                         Log.d("RETRO", "response : " + response.body().toString());
-                        String kode = response.body().getKode();
+                        String status = response.body().getStatus();
 
-                        if(kode == "1") {
+                        if(status.equalsIgnoreCase("true")) {
                             Toast.makeText(Buatakun.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(Buatakun.this, "Data Error tidak berhasil disimpan", Toast.LENGTH_SHORT).show();

@@ -9,8 +9,8 @@ public interface ApiRequestUser {
 
     @FormUrlEncoded
     @POST("users")
-    Call<ResponsModel> sendUser(@Field("idBengkel") Integer idBengkel,
-                                     @Field("jenisUser") Integer jenisUser,
+    Call<ResponsModel> sendUser(@Field("idbengkel") Integer idBengkel,
+                                     @Field("jenisuser") Integer jenisUser,
                                      @Field("username") String username,
                                      @Field("password") String password,
                                      @Field("email") String email);

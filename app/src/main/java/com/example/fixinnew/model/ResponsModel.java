@@ -2,21 +2,21 @@ package com.example.fixinnew.model;
 
 public class ResponsModel {
 
-    String kode, pesan;
+    String status, message;
 
-    public String getKode() {
-        return kode;
+    public String getStatus() {
+        return status;
     }
 
-    public void setKode(String kode) {
-        this.kode = kode;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public String getPesan() {
-        return pesan;
+    public String getMessage() {
+        return message;
     }
 
-    public void setPesan(String pesan) {
-        this.pesan = pesan;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
