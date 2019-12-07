@@ -12,69 +12,75 @@
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
-        android:layout_height="254dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
         android:paddingTop="40dp"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
         android:text=" Yukk, buat akunmu"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:fontFamily="sans-serif-medium" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/inputUsername"
         android:layout_width="286dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
         android:background="@drawable/rec1"
         android:drawableStart="@drawable/logo_user"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:padding="10dp"/>
+        android:textColor="#FFFFFF"/>
 
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/inputEmail"
         android:layout_width="286dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:background="@drawable/rec1"
         android:drawableLeft="@drawable/logo_email"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:padding="10dp"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/inputPassword"
         android:layout_width="286dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:background="@drawable/rec1"
         android:drawableLeft="@drawable/logo_password"
         android:ems="10"
         android:inputType="textPassword"
-        android:padding="10dp"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonDaftar"
         android:layout_width="286dp"
-        android:layout_height="70dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rec2"
         android:text="Daftar" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
 </LinearLayout>
