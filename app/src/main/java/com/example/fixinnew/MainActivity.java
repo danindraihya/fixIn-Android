@@ -10,18 +10,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button btnMasuk;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnMasuk = (Button)findViewById(R.id.button);
+        btnMasuk = (Button)findViewById(R.id.button);
         TextView clickdaftar = (TextView) findViewById(R.id.clickdaftar) ;
 
         btnMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), ActivityLogin.class);
+                Intent startIntent = new Intent(MainActivity.this, ActivityLogin.class);
                 startActivity(startIntent);
             }
         });

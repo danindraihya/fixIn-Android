@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fixinnew.api.Retroserver;
-import com.example.fixinnew.model.ApiRequestUser;
+import com.example.fixinnew.api.ApiRequestUser;
 import com.example.fixinnew.model.ResponsModel;
 
 import retrofit2.Call;
