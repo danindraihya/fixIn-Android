@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Retroserver {
 
-    private static final String base_url = "http://192.168.99.249/fixIn/api/";
+    private static final String base_url = "http://192.168.1.11/fixIn/api/";
 
     private static Retrofit retrofit;
 

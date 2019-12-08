@@ -61,7 +61,7 @@ public class Buatakun extends AppCompatActivity {
                         String status = response.body().getStatus();
 
                         if(status.equalsIgnoreCase("true")) {
-                            Toast.makeText(Buatakun.this, "Data berhasil disimpan", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Buatakun.this, "Berhasil Daftar", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(Buatakun.this, "Data Error tidak berhasil disimpan", Toast.LENGTH_SHORT).show();
                         }
