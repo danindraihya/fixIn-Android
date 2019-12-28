@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fixinnew">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TampilData"></activity>
+        <activity android:name=".Maps"></activity>
+        <activity android:name=".Try" />
+        <activity android:name=".CardView" />
+        <activity android:name=".PiliihKendaraan" />
+        <activity android:name=".Drawable" />
+        <activity android:name=".InputStnk" />
+        <activity
+            android:name=".ActivityBeranda"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".TampilData" />
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

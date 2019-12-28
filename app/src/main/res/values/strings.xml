@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FixInNew</string>
+
+    <string name="permissions">Ijinkan</string>
+
+
 </resources>

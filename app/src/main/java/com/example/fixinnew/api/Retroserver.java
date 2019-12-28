@@ -9,7 +9,6 @@ public class Retroserver {
 
     private static Retrofit retrofit;
 
-
     public static Retrofit getClient()
     {
         if (retrofit == null) {
