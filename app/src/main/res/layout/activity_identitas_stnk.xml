@@ -41,7 +41,7 @@
         android:layout_height="283dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="28dp"
-        app:srcCompat="@drawable/STNK2" />
+        app:srcCompat="@drawable/stnk2" />
 
     <TextView
         android:id="@+id/textView18"
