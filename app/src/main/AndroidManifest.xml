@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".Maps"></activity>
         <activity android:name=".Try" />
         <activity android:name=".CardView" />
@@ -21,6 +22,17 @@
         <activity
             android:name=".ActivityBeranda"
             android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name=".pencarian1"></activity>
+        <activity android:name=".isiDataKendaraan" />
+        <activity android:name=".inputManual" />
+        <activity android:name=".identitasSTNK" />
+        <activity android:name=".pilihSebagai" />
+        <activity android:name=".berhasilAtur" />
+        <activity android:name=".atursandi2" />
+        <activity android:name=".aturSandi" />
+        <activity android:name=".pilih" />
+
         <activity android:name=".TampilData" />
         <activity android:name=".splash">
             <intent-filter>
