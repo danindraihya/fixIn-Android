@@ -30,7 +30,7 @@ public class ActivityBeranda extends AppCompatActivity {
     MyAdapter myAdapter;
     List<FotoBengkelModel> mData = new ArrayList<>();
     public static ActivityBeranda ab;
-    Button buttonBan;
+    Button buttonBan, buttonMekanik;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,7 @@ public class ActivityBeranda extends AppCompatActivity {
         setContentView(R.layout.activity_beranda);
         sharedPrefManager = new SharedPrefManager(this);
         buttonBan = (Button) findViewById(R.id.buttonBan);
+        buttonMekanik = (Button) findViewById(R.id.buttonMekanik);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager
@@ -50,10 +51,19 @@ public class ActivityBeranda extends AppCompatActivity {
         buttonBan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println(sharedPrefManager.getSpStnk());
                 sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN, false);
                 startActivity(new Intent(ActivityBeranda.this, ActivityLogin.class)
                         .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
                 finish();
+            }
+        });
+
+        buttonMekanik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), Maps.class);
+                startActivity(startIntent);
             }
         });
 

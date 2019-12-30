@@ -6,9 +6,10 @@ import android.content.SharedPreferences;
 public class SharedPrefManager {
 
     public static final String SP_FIXIN_APP = "spFixinApp";
-
+    public static final String SP_STNK = "null";
     public static final String SP_NAMA = "spNama";
     public static final String SP_EMAIL = "spEmail";
+    public static final String SP_STATUS = "spStatus";
 
     public static final String SP_SUDAH_LOGIN = "spSudahLogin";
 
@@ -33,6 +34,14 @@ public class SharedPrefManager {
     public void saveSPBoolean(String keySP, boolean value){
         spEditor.putBoolean(keySP, value);
         spEditor.commit();
+    }
+
+    public String getSpStnk() {
+        return sp.getString(SP_STNK, "");
+    }
+
+    public Integer getSpStatus(){
+        return sp.getInt(SP_STATUS, 0);
     }
 
     public String getSPNama(){

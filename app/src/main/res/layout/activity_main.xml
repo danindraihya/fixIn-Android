@@ -32,29 +32,41 @@
         android:layout_weight="0.5"
         android:orientation="horizontal">
 
-        <ImageView
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            ></Space>
+
+        <Button
             android:id="@+id/imageView3"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.1"
-            android:layout_marginRight="-80dp"
-            app:srcCompat="@drawable/twitter" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/fb" />
 
-        <ImageView
+        <Button
             android:id="@+id/imageView4"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginRight="-80dp"
-            android:layout_weight="0.1"
-            app:srcCompat="@drawable/facebook" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/twitter" />
 
-        <ImageView
+        <Button
             android:id="@+id/imageView5"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.1"
-            app:srcCompat="@drawable/google" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/google" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            ></Space>
+
     </LinearLayout>
 
     <TextView

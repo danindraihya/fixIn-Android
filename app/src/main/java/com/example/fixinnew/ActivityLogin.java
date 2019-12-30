@@ -66,7 +66,7 @@ public class ActivityLogin extends AppCompatActivity {
                     public void onResponse(Call<ResponsModel> call, Response<ResponsModel> response) {
                         if(response.body().getStatus() == "true") {
                             sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN, true);
-                            Intent startIntent = new Intent(getApplicationContext(), ActivityBeranda.class);
+                            Intent startIntent = new Intent(getApplicationContext(), PiliihKendaraan.class);
                             startActivity(startIntent);
                             pd.hide();
                         } else {

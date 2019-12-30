@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         clickdaftar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), Buatakun.class);
+                Intent startIntent = new Intent(getApplicationContext(), pilihSebagai.class);
                 startActivity(startIntent);
             }
         });
