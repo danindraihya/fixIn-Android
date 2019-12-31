@@ -22,6 +22,7 @@ public class splash extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(new Intent(getApplicationContext(), Dashboard.class));
+
                 finish();
             }
         }, 3000L); //3000 L = 3 detik

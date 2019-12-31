@@ -20,6 +20,10 @@
         <activity
             android:name=".Dashboard"
             android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".syaratKetentuan"></activity>
+        <activity android:name=".FAQ" />
+        <activity android:name=".TentangApl" />
+        <activity android:name=".HubungiKami" />
         <activity android:name=".Maps" />
         <activity android:name=".Try" />
         <activity android:name=".CardView" />
