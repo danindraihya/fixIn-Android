@@ -21,7 +21,7 @@ public class splash extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), InputStnk.class));
+                startActivity(new Intent(getApplicationContext(), syaratKetentuan.class));
                 finish();
             }
         }, 3000L); //3000 L = 3 detik

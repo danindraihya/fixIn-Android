@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class pilihSebagai extends AppCompatActivity {
 
-    Button user;
-    Button mitra;
+    ImageView user, mitra;
     private int status;
     SharedPrefManager sharedPrefManager;
 
@@ -19,8 +19,8 @@ public class pilihSebagai extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pilih_sebagai);
         sharedPrefManager = new SharedPrefManager(this);
-        user = (Button) findViewById(R.id.user);
-        mitra = (Button) findViewById(R.id.mitra);
+        user =  (ImageView) findViewById(R.id.user);
+        mitra = (ImageView) findViewById(R.id.mitra);
 
         user.setOnClickListener(new View.OnClickListener() {
             @Override
