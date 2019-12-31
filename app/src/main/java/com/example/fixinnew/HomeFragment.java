@@ -1,12 +1,15 @@
 package com.example.fixinnew;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,53 +25,45 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ActivityBeranda extends AppCompatActivity {
+public class HomeFragment extends Fragment {
 
     SharedPrefManager sharedPrefManager;
     ApiRequestFotoBengkel api;
     RecyclerView mRecyclerView;
     MyAdapter myAdapter;
     List<FotoBengkelModel> mData = new ArrayList<>();
-    public static ActivityBeranda ab;
+    public static HomeFragment ab;
     Button buttonBan, buttonMekanik;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beranda);
-        sharedPrefManager = new SharedPrefManager(this);
-//        buttonBan = (Button) findViewById(R.id.buttonBan);
-//        buttonMekanik = (Button) findViewById(R.id.buttonMekanik);
-//
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        sharedPrefManager = new SharedPrefManager(view.getContext());
         LinearLayoutManager layoutManager
-                = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+                = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
         mRecyclerView.setLayoutManager(layoutManager);
         api = Retroserver.getClient().create(ApiRequestFotoBengkel.class);
         ab=this;
         refresh();
 
-        buttonBan.setOnClickListener(new View.OnClickListener() {
+        Button btn = (Button) view.findViewById(R.id.buttonBan);
+
+
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println(sharedPrefManager.getSpStnk());
-                sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN, false);
-                startActivity(new Intent(ActivityBeranda.this, ActivityLogin.class)
-                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
-                finish();
+                System.out.println("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+                System.out.println(view.getContext());
             }
         });
 
-        buttonMekanik.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), Maps.class);
-                startActivity(startIntent);
-            }
-        });
-
-
+        return view;
     }
+
     public void refresh() {
         Call<ResponsModelFotoBengkel> getData = api.getFotoBengkel();
         getData.enqueue(new Callback<ResponsModelFotoBengkel>() {
@@ -82,10 +77,7 @@ public class ActivityBeranda extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponsModelFotoBengkel> call, Throwable t) {
-
             }
         });
     }
-
-
 }
