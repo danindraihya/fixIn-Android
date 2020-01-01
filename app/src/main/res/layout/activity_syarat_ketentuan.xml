@@ -1,86 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#FFFF"
     tools:context=".syaratKetentuan">
 
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="525dp"
-        android:layout_height="85dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.991"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rect" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/forward"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
-
-    <TextView
-        android:id="@+id/textView48"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SYARAT DAN KETENTUAN"
-        android:textColor="#FFFF"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
-
-    <androidx.core.widget.NestedScrollView
+    <RelativeLayout
+        android:id="@+id/layAtas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/rect"></ImageView>
 
-            <TextView
-                android:id="@+id/textView49"
+        <ImageView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:src="@drawable/forward">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv2"
+            android:gravity="center_horizontal"
+            android:text="SYARAT DAN KETENTUAN"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layAtas">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Terms dan Condition Fix-in"
-                android:textColor="#020202"
-                android:layout_marginTop="100dp"
-                android:gravity="center_horizontal"
-                android:textSize="24sp" />
+                android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/line"/>
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Terms dan Condition Fix-in"
+                    android:textColor="#020202"
+                    android:textSize="24sp" />
 
-            <TextView
-                android:id="@+id/textView50"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="2dp"
-                android:text="Dengan mengunduh, memasang, dan/atau menggunakan \n Aplikasi Fix-in,anda setuju bahwa anda telah membaca, \n memahami, menerima, serta menyetujui syarat dan ketentuan ini.\n\n Silahkan membatalkan akun anda (apabila telah melakukan registrasi) \n dan secara permanen mengahapus aplikasi dari perangkat anda,apabila anda tidak setuju atau tidak ingin masuk ke dalam syarat dan ketentuan ini.\n \n 1. Anda memiliki hak, wewenang dan kapasitas untuk menggunakanLayanan Fix-in.\n  2. Kami mengumpulkan dan memproses informasi bisnis dan informasi pribadi Anda, seperti nama, alamat surat elektronik (surel/e-mail), dan nomor telephone seluler Anda ketika Anda mendaftar. Anda harus memberikan informasi yang akurat dan lengkap.\n  3. Anda hanya dapat menggunakan Aplikasi ketika Anda telah mendaftar pada Aplikasi tersebut. Setelah Anda berhasil mendaftarkan diri, Aplikasi akan memberikan Anda suatu akun pribadi yang dapat diakses dengan kata sandi yang Anda pilih.\n  4. Hanya Anda yang dapat menggunakan akun Anda sendiri dan Anda berjanji untuk tidak memberikan wewenang kepada orang lain untuk menggunakan identitas Anda kepada pihak lain. Anda tidak dapat menyerahkan atau mengalihkan akun Anda kepada pihak lain.\n  5. Anda hanya dapat memiliki satyu akun Fix-in dalam satu e-mail.\n  6. Anda berjanji bahwa Anda akan menggunakan Aplikasi hanya untuk tujuan yang dimaksud untuk mendapatkan Layanan. Anda tidak diperbolehkan untuk menyalahgunakan atau menggunakan Aplikasi untuk tujuan penipuan atau menyebabkan ketidaknyamanan kepada orang lain.\n    7. Anda tidak diperkenankan untuk membahayakan, mengubah atau memodifikasi Aplikasi dan/atau Situs web dengan cara apapun. Kami tidak bertanggungjawab jika Anda tidak memilikik perangkat yang sesuai atau jika Anda telah mengunduh versi Aplikasi yang salah untuk perangkat Anda.\n salah untuk perangkat Anda.   8. Anda akan menjaga kerahasiaan dan tidak akan menyalahgunakan informasi yang Anda terima dari penggunaan Aplikasi tersebut.\n  9. Anda memahami dan setuju bahwa penggunaan Aplikasi oleh Anda akan tunduk pula pada Kebijakan Privasi Kami sebagaimana dapat diubah dari waktu ke waktu. Dengan menggunakan Aplikasi, Anda juga memberikan persetujuan sebagaimana dipersyaratkan berdasarkan Kebijakan Privasi kami.\n " />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Dengan mengunduh, memasang, dan/atau menggunakan\nAplikasi Fix-in,anda setuju bahwa anda telah membaca,\nmemahami, menerima, serta menyetujui syarat dan ketentuan ini.\n\nSilahkan membatalkan akun anda (apabila telah melakukan registrasi)\ndan secara permanen mengahapus aplikasi dari perangkat anda,apabila anda tidak setuju atau tidak ingin masuk ke dalam syarat dan ketentuan ini.\n\n1. Anda memiliki hak, wewenang dan kapasitas untuk menggunakanLayanan Fix-in.\n 2. Kami mengumpulkan dan memproses informasi bisnis dan informasi pribadi Anda, seperti nama, alamat surat elektronik (surel/e-mail), dan nomor telephone seluler Anda ketika Anda mendaftar. Anda harus memberikan informasi yang akurat dan lengkap.\n3. Anda hanya dapat menggunakan Aplikasi ketika Anda telah mendaftar pada Aplikasi tersebut. Setelah Anda berhasil mendaftarkan diri, Aplikasi akan memberikan Anda suatu akun pribadi yang dapat diakses dengan kata sandi yang Anda pilih.\n4. Hanya Anda yang dapat menggunakan akun Anda sendiri dan Anda berjanji untuk tidak memberikan wewenang kepada orang lain untuk menggunakan identitas Anda kepada pihak lain. Anda tidak dapat menyerahkan atau mengalihkan akun Anda kepada pihak lain.\n5. Anda hanya dapat memiliki satyu akun Fix-in dalam satu e-mail.\n6. Anda berjanji bahwa Anda akan menggunakan Aplikasi hanya untuk tujuan yang dimaksud untuk mendapatkan Layanan. Anda tidak diperbolehkan untuk menyalahgunakan atau menggunakan Aplikasi untuk tujuan penipuan atau menyebabkan ketidaknyamanan kepada orang lain.\n7. Anda tidak diperkenankan untuk membahayakan, mengubah atau memodifikasi Aplikasi dan/atau Situs web dengan cara apapun. Kami tidak bertanggungjawab jika Anda tidak memilikik perangkat yang sesuai atau jika Anda telah mengunduh versi Aplikasi yang salah untuk perangkat Anda.\n8. Anda akan menjaga kerahasiaan dan tidak akan menyalahgunakan informasi yang Anda terima dari penggunaan Aplikasi tersebut.\n9. Anda memahami dan setuju bahwa penggunaan Aplikasi oleh Anda akan tunduk pula pada Kebijakan Privasi Kami sebagaimana dapat diubah dari waktu ke waktu. Dengan menggunakan Aplikasi, Anda juga memberikan persetujuan sebagaimana dipersyaratkan berdasarkan Kebijakan Privasi kami.\n " />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
 
 
