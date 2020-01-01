@@ -48,8 +48,164 @@
         >
         <ImageView
             android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bengkel"
+            android:layout_marginTop="20dp"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Pemesanan"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="55dp"
+            android:layout_below="@id/text1"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bawah2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bawah"
+        android:background="@drawable/rirara2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/bawah3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"></TextView>
+        <ImageView
+            android:id="@+id/bawah4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            ></ImageView>
+            android:src="@drawable/maps"
+            android:layout_below="@id/bawah3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"></ImageView>
+        <TextView
+            android:id="@+id/bawah5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Politeknik Elektronika Negeri Surabaya"
+            android:layout_below="@id/bawah3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/bawah4"
+            android:textColor="#020202"
+            android:textSize="16sp"></TextView>
+        <TextView
+            android:id="@+id/bawah6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layanan"
+            android:layout_below="@id/bawah4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="15dp"></TextView>
+        <TextView
+            android:id="@+id/bawah7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti Oli Motor"
+            android:layout_below="@id/bawah6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#020202"
+            android:textSize="16sp"></TextView>
+        <View
+            android:id="@+id/bawah8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/bawah7"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:id="@+id/bawah9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:layout_below="@id/bawah8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:id="@+id/bawah10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mulai dari 15.000,00"
+            android:layout_below="@id/bawah8"
+            android:layout_toRightOf="@id/bawah9"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#020202"
+            android:textSize="15sp"></TextView>
+
     </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rBawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bawah2">
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kendaraan"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55dp"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rBawah2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rBawah"
+        android:background="@drawable/rirara3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/textB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vario - W 6236 TC"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:textColor="#020202"
+            android:textSize="16sp"
+            ></TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rirara"
+        android:text="PESAN SEKARANG"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_below="@id/rBawah2"
+        android:layout_marginTop="17dp"></Button>
+
 </RelativeLayout>

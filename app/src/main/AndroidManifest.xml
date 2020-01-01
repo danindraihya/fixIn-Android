@@ -12,7 +12,8 @@
         android:roundIcon="@drawable/logo1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bengkelTampil"></activity>
+        <activity android:name=".ubah_profil"></activity>
+        <activity android:name=".bengkelTampil" />
         <activity android:name=".bengkelDaftar" />
         <activity android:name=".reminder" />
         <activity android:name=".sparepart" />
