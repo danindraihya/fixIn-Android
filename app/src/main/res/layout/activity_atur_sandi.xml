@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,41 +9,75 @@
     tools:context=".aturSandi">
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/logoAturSandi"
         android:layout_width="match_parent"
-        android:layout_height="287dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:layout_constraintBottom_toTopOf="@id/spaceAturSandi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
         android:text="Atur ulang kata sandi"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/logoAturSandi"
+        app:layout_constraintEnd_toEndOf="@id/logoAturSandi"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@id/logoAturSandi"
+        app:layout_constraintTop_toTopOf="@id/logoAturSandi"
+        app:layout_constraintVertical_bias="0.47000003" />
+    <!-- 286 -->
     <EditText
         android:id="@+id/email"
-        android:layout_width="286dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:hint="\t email"
+        android:textColorHint="#DCDCDC"
         android:background="@drawable/rec1"
         android:drawableLeft="@drawable/logo_email"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@id/logoAturSandi"
+        app:layout_constraintEnd_toEndOf="@id/logoAturSandi"
+        app:layout_constraintStart_toStartOf="@id/logoAturSandi"
+        app:layout_constraintTop_toTopOf="@id/logoAturSandi"
+        app:layout_constraintVertical_bias="0.58000004" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="286dp"
-        android:layout_height="58dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
         android:background="@drawable/rec2"
-        android:text="Lanjutkan" />
+        android:text="Lanjutkan"
+        app:layout_constraintBottom_toBottomOf="@id/logoAturSandi"
+        app:layout_constraintEnd_toEndOf="@id/logoAturSandi"
+        app:layout_constraintStart_toStartOf="@id/logoAturSandi"
+        app:layout_constraintTop_toTopOf="@id/logoAturSandi"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/spaceAturSandi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoAturSandi"
+
+        />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

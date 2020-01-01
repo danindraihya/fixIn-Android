@@ -2,6 +2,6 @@
     <string name="app_name">FixInNew</string>
 
     <string name="permissions">Ijinkan</string>
-
+    <string name="access_token">pk.eyJ1IjoiZGFuaW5kcmEiLCJhIjoiY2szNzZ4Y3Z3MDlncjNrczFsc290bnI4aiJ9.hd2BKXV3iZWNQCOldxeZdA</string>
 
 </resources>

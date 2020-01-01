@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQ">
+
+    <ImageView
+        android:id="@+id/navAtas"
+        app:srcCompat="@drawable/rect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/forward"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Fix-in"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navAtas"
+        >
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Apa itu Fix-in ?"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Fix-in adalah aplikasi yang dibuat oleh Fix-in Company yang bergerak di bidang transportasi untuk memudahkan para pengguna untuk mendapatkan bengkel terdekat dan tepat.  "
+            android:textSize="15sp"
+            android:layout_below="@id/tv1"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Siapa saja yang dapat menggunakan Fix-in ?"
+            android:layout_below="@+id/tv2"
+            android:textColor="#020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Siapa saja yang sudah melakukan registrasi di aplikasi Fix-in"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/tv3"
+            />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Bagaimana cara registrasi layanan Fix-in ?"
+            android:textColor="#020202"
+            android:textSize="18sp"
+            android:layout_below="@+id/tv4"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Cara registrasi melalui aplikasi Fix-in :"
+            android:textSize="15sp"
+            android:layout_below="@id/tv5"/>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv6"
+            android:layout_marginLeft="10dp"
+            android:text="1. Download aplikasi Fix-in di Playstore."
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv7"
+            android:text="2. Buka aplikasi Fix-in - klik daftar. "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv8"
+            android:text="3. Isikan username, email, dan password - klik daftar."
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv9"
+            android:text="4. Silahkan menikmati berbagai layanan Fix-in."
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv10"
+            android:text="Berapa biaya pendaftaran Fix-in yang  dikenakan ke pengguna ? "
+            android:textColor="#020202"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv11"
+            android:text="Fix-in tidak mengenakan biaya pendaftaran ke setiap penggunanya."
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

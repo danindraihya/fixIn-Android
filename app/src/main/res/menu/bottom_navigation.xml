@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/beranda"
+        android:title="Beranda">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        android:title="Temukan"></item>
+
+    <item
+        android:id="@+id/nav_kendaraan"
+        android:icon="@drawable/kendaraan"
+        android:title="Kendaraan"></item>
+
+    <item
+        android:id="@+id/nav_pengingat"
+        android:icon="@drawable/pengingat"
+        android:title="Pengingat"
+        ></item>
+
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/user"
+        android:title="Profile"
+        ></item>
+</menu>

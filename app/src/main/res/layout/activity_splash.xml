@@ -15,4 +15,6 @@
         android:layout_gravity="center"
         android:layout_weight="0.5"
         app:srcCompat="@drawable/logo" />
+
+
 </LinearLayout>

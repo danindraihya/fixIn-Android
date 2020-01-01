@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pilihSebagai">
+
+    <TextView
+        android:id="@+id/tvPilih"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1B2255"
+        android:gravity="center"
+        android:text="Pilih yang sesuai dengan .........."
+        android:textColor="#FFFF"
+        android:textSize="20sp"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/user1" />
+
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="User"
+        android:textColor="#070707"
+        android:textSize="30sp"
+         />
+
+    <ImageView
+        android:id="@+id/mitra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        app:srcCompat="@drawable/mitra" />
+
+
+
+    <TextView
+        android:id="@+id/tvmitra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="Pemilik Bengkel"
+        android:textColor="#070707"
+        android:textSize="30sp"
+         />
+
+
+</LinearLayout>
