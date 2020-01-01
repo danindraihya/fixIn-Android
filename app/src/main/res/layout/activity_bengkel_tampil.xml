@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".bengkelTampil">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/layAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF">
+        <ImageView
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rect"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:src="@drawable/forward"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PEMESANAN"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layAtas"
+        >
+        <ImageView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ImageView>
+    </RelativeLayout>
+</RelativeLayout>

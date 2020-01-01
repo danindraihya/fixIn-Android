@@ -12,15 +12,16 @@
         android:id="@+id/imageView13"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        app:srcCompat="@drawable/logo" />
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.6"
+        app:srcCompat="@drawable/logof" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.3"
-        android:layout_marginTop="10dp"
+        android:layout_weight="0.2"
+        android:layout_marginTop="0dp"
         android:gravity="center_horizontal"
         android:text="Berhasil !"
         android:textColor="#FFFF"
@@ -31,8 +32,8 @@
         android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.3"
         android:gravity="center_horizontal"
         android:text="Hore ! kini sandi kamu telah di atur ulang. Yuk, masuk dengan sandi baru kamu :)"
         android:textColor="#FFFF"
@@ -42,7 +43,7 @@
         android:id="@+id/button4"
         android:layout_width="286dp"
         android:layout_height="0dp"
-        android:layout_weight="0.4"
+        android:layout_weight="0.16"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:background="@drawable/rec2"
@@ -51,6 +52,6 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="0.5"
         ></Space>
 </LinearLayout>

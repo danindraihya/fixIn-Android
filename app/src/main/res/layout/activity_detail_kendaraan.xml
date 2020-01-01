@@ -35,6 +35,7 @@
         android:layout_width="450dp"
         android:layout_height="490dp"
         android:src="@drawable/detail"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -165,10 +166,10 @@
 
     </LinearLayout>
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ubah"
+        android:background="@drawable/lewati"
         app:layout_constraintBottom_toBottomOf="@id/iv2"
         app:layout_constraintEnd_toEndOf="@id/iv2"
         app:layout_constraintHorizontal_bias="0.9"

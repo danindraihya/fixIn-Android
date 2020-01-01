@@ -71,8 +71,8 @@
 
     <Button
         android:id="@+id/buttonUpgradeAkun"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
         android:layout_alignParentRight="true"
         android:layout_margin="20dp"
         android:background="@drawable/arrow"
@@ -109,8 +109,8 @@
 
     <Button
         android:id="@+id/buttonUbahPassword"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
         android:layout_alignParentRight="true"
         android:layout_margin="20dp"
         android:background="@drawable/arrow"
@@ -164,8 +164,8 @@
 
             <Button
                 android:id="@+id/buttonFaq"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
                 android:layout_alignParentRight="true"
                 android:layout_margin="20dp"
                 android:background="@drawable/arrow"
@@ -202,8 +202,8 @@
 
             <Button
                 android:id="@+id/buttonHubungi"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
                 android:layout_alignParentRight="true"
                 android:layout_margin="20dp"
                 android:background="@drawable/arrow"
@@ -241,8 +241,8 @@
 
             <Button
                 android:id="@+id/buttonTentang"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
                 android:layout_alignParentRight="true"
                 android:layout_margin="20dp"
                 android:background="@drawable/arrow"
@@ -280,8 +280,8 @@
 
             <Button
                 android:id="@+id/buttonSyarat"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
                 android:layout_alignParentRight="true"
                 android:layout_margin="20dp"
                 android:background="@drawable/arrow"

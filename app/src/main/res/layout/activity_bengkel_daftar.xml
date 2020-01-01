@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".bengkelDaftar">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/layAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF">
+        <ImageView
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rect"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:src="@drawable/forward"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BENGKEL"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layAtas">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/kotak1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bengkel"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/namaB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rar2"
+                        android:layout_below="@+id/text2"
+                        android:layout_marginTop="8dp"
+                        android:text="Jaya Abadi Bengkel"
+                        android:textSize="16sp"
+                        android:textColor="#FFFF"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="18dp"/>
+
+                    <TextView
+                        android:id="@+id/jarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rar"
+                        android:layout_below="@+id/namaB"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1 KM"
+                        android:textColor="#FFFF"
+                        android:textSize="16sp"
+                        android:gravity="center_horizontal"></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hati"
+                        android:layout_toRightOf="@id/jarak"
+                        android:layout_below="@+id/text2"
+                        android:layout_marginTop="42dp"
+                        android:layout_marginLeft="180dp"
+                        ></ImageView>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
