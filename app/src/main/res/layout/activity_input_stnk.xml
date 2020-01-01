@@ -48,11 +48,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Wow, kamu sekarang bisa menambahkan kendaraanmu dengan mudah !!"
+        android:text="Wow, kamu sekarang bisa \n menambahkan kendaraanmu dengan mudah !!"
         android:textColor="#FFFFFF"
         android:paddingTop="10dp"
         android:gravity="center"
-        android:textSize="27sp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -63,7 +63,7 @@
         android:layout_marginHorizontal="10dp"
         android:text="Masukkan nomor mesin yang ada di STNK kamu."
         android:textColor="#FFFFFF"
-        android:textSize="27sp" />
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/inputStnk"
@@ -95,29 +95,46 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/inputManual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:text="input manual"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:text="input manual"
             android:textColor="#2196F3"
             android:textSize="20sp" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button3"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="240dp"
-        android:layout_marginRight="20dp"
-        android:layout_weight="0.1"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/r1405"
-        android:text="LEWATI>"
-        android:textColor="#FFFF"
-        android:textSize="24sp" />
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </Space>
+
+        <Button
+            android:id="@+id/buttonLewati"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/r1405"
+            android:text="LEWATI>"
+            android:textColor="#FFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
 
 
 </LinearLayout>

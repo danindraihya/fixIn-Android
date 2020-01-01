@@ -1,5 +1,6 @@
 package com.example.fixinnew;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -50,14 +51,14 @@ public class HomeFragment extends Fragment {
         ab=this;
         refresh();
 
-        Button btn = (Button) view.findViewById(R.id.buttonBan);
+        Button btnBan = (Button) view.findViewById(R.id.buttonBan);
 
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnBan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
-                System.out.println(view.getContext());
+                Intent startIntent = new Intent(view.getContext(), Oli.class);
+                startActivity(startIntent);
             }
         });
 

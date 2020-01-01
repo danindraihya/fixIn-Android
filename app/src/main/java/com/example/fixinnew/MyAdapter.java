@@ -17,7 +17,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
     Context c;
     List<FotoBengkelModel> models;
-    List<Model> mItems;
 
     public MyAdapter(List<FotoBengkelModel> models) {
         this.models = models;
@@ -34,10 +33,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
 
-
         holder.mTitle.setText(models.get(position).getAlamat());
 //        holder.mDes.setText(Integer.toString(models.get(position).getIdbengkel()));
-        Picasso.get().load("http://192.168.1.16/fixIn/foto/" + models.get(position).getFoto()).into(holder.mImageView);
+        Picasso.get().load("https://fixin-123.000webhostapp.com/foto/" + models.get(position).getFoto()).into(holder.mImageView);
 
 //
     }

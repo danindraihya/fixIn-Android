@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/fotoProfile"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Space
@@ -32,15 +32,16 @@
     </LinearLayout>
 
 <androidx.cardview.widget.CardView
+    android:id="@+id/card1"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_marginHorizontal="10dp"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1.2"
+    android:layout_height="wrap_content"
     card_view:cardBackgroundColor="#FFF"
     card_view:cardCornerRadius="8dp"
     card_view:cardElevation="18dp"
+    android:layout_below="@+id/fotoProfile"
     >
 
 <RelativeLayout
@@ -123,16 +124,17 @@
 </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2.5"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         card_view:cardBackgroundColor="#FFF"
         card_view:cardCornerRadius="8dp"
         card_view:cardElevation="8dp"
         android:layout_marginTop="20dp"
+        android:layout_below="@+id/card1"
         >
 
         <RelativeLayout
@@ -291,13 +293,14 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/buttonLogout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         android:text="LOGOUT"
         android:textColor="#FFF"
         android:background="@drawable/logout"
+        android:layout_below="@+id/card2"
         />
 
 
@@ -305,4 +308,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>

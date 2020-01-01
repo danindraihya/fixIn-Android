@@ -41,7 +41,7 @@
         android:text="User"
         android:textColor="#070707"
         android:textSize="30sp"
-        />
+         />
 
     <ImageView
         android:id="@+id/mitra"
@@ -62,6 +62,7 @@
         android:text="Pemilik Bengkel"
         android:textColor="#070707"
         android:textSize="30sp"
-        />
+         />
+
 
 </LinearLayout>

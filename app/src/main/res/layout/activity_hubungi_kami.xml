@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,155 +7,61 @@
     tools:context=".HubungiKami">
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="585dp"
-        android:layout_height="82dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        android:id="@+id/navAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
         app:srcCompat="@drawable/rect" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:id="@+id/btnBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:background="@drawable/forward"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        />
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="7dp"
         android:text="HUBUNGI KAMI"
         android:textColor="#FFFF"
-        android:textSize="30sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        android:layout_alignParentTop="true"
+        />
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Telephone"
-        android:textColor="#030303"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navAtas">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="413dp"
-        android:layout_height="120dp"
-        android:background="@drawable/base2"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:paddingHorizontal="100dp"
-        android:paddingBottom="20dp"
-        android:text="081918151267"
-        android:typeface="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/telepon"></ImageView>
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="117dp"
-        android:layout_height="196dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/base" />
+<ImageView
+    android:id="@+id/iv2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/email"
+    android:layout_below="@+id/iv1"
+    ></ImageView>
 
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="35dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291"
-        app:srcCompat="@drawable/path1" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="#030303"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="413dp"
-        android:layout_height="120dp"
-        android:ems="10"
-        android:background="@drawable/base2"
-        android:paddingHorizontal="100dp"
-        android:paddingBottom="20dp"
-        android:text="fixinapp1@gmail.com"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="330dp" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        app:srcCompat="@drawable/base"
-        android:layout_width="117dp"
-        android:layout_height="196dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="319dp" />
-
-    <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="35dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48000002"
-        app:srcCompat="@drawable/logo_email" />
+    </RelativeLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

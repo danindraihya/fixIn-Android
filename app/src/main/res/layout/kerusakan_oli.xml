@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Ganti Oli Motor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulai dari 15.000"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/tvDes"
+                />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Bengkel"
+                android:layout_below="@+id/tvDes"
+                android:layout_toLeftOf="@id/iv1"
+                android:layout_marginRight="30dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_below="@+id/tvDes"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@id/iv1"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

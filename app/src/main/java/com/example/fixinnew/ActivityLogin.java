@@ -42,11 +42,7 @@ public class ActivityLogin extends AppCompatActivity {
         password = (EditText) findViewById(R.id.loginPassword);
         pd = new ProgressDialog(this);
 
-        if (sharedPrefManager.getSPSudahLogin()){
-            startActivity(new Intent(ActivityLogin.this, ActivityBeranda.class)
-                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
-            finish();
-        }
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,10 +61,11 @@ public class ActivityLogin extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<ResponsModel> call, Response<ResponsModel> response) {
                         if(response.body().getStatus() == "true") {
+                            pd.hide();
                             sharedPrefManager.saveSPBoolean(SharedPrefManager.SP_SUDAH_LOGIN, true);
                             Intent startIntent = new Intent(getApplicationContext(), pilih.class);
                             startActivity(startIntent);
-                            pd.hide();
+
                         } else {
                             pd.hide();
                             Toast.makeText(ActivityLogin.this, "Gagal Login", Toast.LENGTH_LONG);

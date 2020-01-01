@@ -60,8 +60,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import timber.log.Timber;
 
-public class SearchFragment extends Fragment implements OnMapReadyCallback, PermissionsListener, MapboxMap.OnMapClickListener {
+public class SearchFragment extends Fragment implements OnMapReadyCallback, PermissionsListener, MapboxMap.OnMapClickListener, SimpleGestureFilter.SimpleGestureListener {
 
+    private SimpleGestureFilter detector;
     private SearchFragment activity;
     Button startButton;
     MapView mapView;
@@ -90,12 +91,47 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback, Perm
 
         view = inflater.inflate(R.layout.fragment_search, container, false);
 
+        // Detect touched area
+        detector = new SimpleGestureFilter(getActivity(), this);
         mapView = (MapView) view.findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         Mapbox.getInstance(view.getContext(), "pk.eyJ1IjoiZGFuaW5kcmEiLCJhIjoiY2szNzZ4Y3Z3MDlncjNrczFsc290bnI4aiJ9.hd2BKXV3iZWNQCOldxeZdA");
         mapView.getMapAsync(this);
 
         return view;
+    }
+
+    @Override
+    public void onSwipe(int direction) {
+
+        //Detect the swipe gestures and display toast
+        String showToastMessage = "";
+        Fragment selectedFragment = null;
+
+        switch (direction) {
+
+            case SimpleGestureFilter.SWIPE_RIGHT:
+                showToastMessage = "You have Swiped Right.";
+                break;
+            case SimpleGestureFilter.SWIPE_LEFT:
+                showToastMessage = "You have Swiped Left.";
+                break;
+            case SimpleGestureFilter.SWIPE_DOWN:
+                selectedFragment = new FragmentHideBengkel();
+                break;
+            case SimpleGestureFilter.SWIPE_UP:
+                selectedFragment = new FragmentShowBengkel();
+                break;
+        }
+        Toast.makeText(view.getContext(), showToastMessage, Toast.LENGTH_SHORT).show();
+    }
+
+
+    //Toast shown when double tapped on screen
+    @Override
+    public void onDoubleTap() {
+        Toast.makeText(view.getContext(), "You have Double Tapped.", Toast.LENGTH_SHORT)
+                .show();
     }
 
 
@@ -156,6 +192,7 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback, Perm
                         // Set up a new symbol layer for displaying the searched location's feature coordinates
                         setupLayer(style);
 
+                        //Logo Marker
                         Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.logo);
                         style.addImage("my-marker",bm);
 
@@ -184,7 +221,7 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback, Perm
                                 .withIconImage("my-marker")
                                 .withIconSize(0.3f)
                                 .withSymbolSortKey(10.0f)
-                                .withDraggable(true);
+                                .withDraggable(false);
                         symbol = symbolManager.create(symbolOptions);
                         Timber.e(symbol.toString());
 

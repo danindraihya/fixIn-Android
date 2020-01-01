@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,8 @@ public class InputStnk extends AppCompatActivity {
     Button buttonCari;
     EditText inputStnk;
     SharedPrefManager sharedPrefManager;
+    TextView inputManual;
+    Button buttonLewati;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,24 @@ public class InputStnk extends AppCompatActivity {
 
         sharedPrefManager = new SharedPrefManager(this);
         pd = new ProgressDialog(this);
+        inputManual = (TextView) findViewById(R.id.inputManual);
+        buttonLewati = (Button) findViewById(R.id.buttonLewati);
+
+        inputManual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), FormKendaraanAwal.class);
+                startActivity(startIntent);
+            }
+        });
+
+        buttonLewati.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(getApplicationContext(), Dashboard.class);
+                startActivity(startIntent);
+            }
+        });
 
         final EditText editComment = (EditText) findViewById(R.id.inputStnk);
 
@@ -45,7 +66,7 @@ public class InputStnk extends AppCompatActivity {
                         String snoStnk = editComment.getText().toString();
                         sharedPrefManager.saveSPString(SharedPrefManager.SP_STNK, snoStnk);
                         pd.hide();
-                        Intent startIntent = new Intent(getApplicationContext(), ActivityBeranda.class);
+                        Intent startIntent = new Intent(getApplicationContext(), Dashboard.class);
                         startActivity(startIntent);
 
 
