@@ -35,7 +35,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> {
 
         holder.mTitle.setText(models.get(position).getAlamat());
 //        holder.mDes.setText(Integer.toString(models.get(position).getIdbengkel()));
-        Picasso.get().load("https://fixin-123.000webhostapp.com/foto/" + models.get(position).getFoto()).into(holder.mImageView);
+        Picasso.get().load("http://10.212.160.187/fix/foto/" + models.get(position).getFoto()).into(holder.mImageView);
 
 //
     }
