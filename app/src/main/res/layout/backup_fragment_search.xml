@@ -31,29 +31,47 @@
 
     </com.mapbox.mapboxsdk.maps.MapView>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewDetail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/btnNavigasi"
-        app:layout_constraintEnd_toEndOf="@id/mapView"
-        app:layout_constraintStart_toStartOf="@id/mapView"
-        app:layout_constraintTop_toTopOf="@id/mapView"
-        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/btnNavigasi"
+    <FrameLayout
+        android:id="@+id/showBengkel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="5dp"
-        android:enabled="false"
         app:layout_constraintBottom_toBottomOf="@id/mapView"
         app:layout_constraintEnd_toEndOf="@id/mapView"
         app:layout_constraintStart_toStartOf="@id/mapView"
         app:layout_constraintTop_toTopOf="@id/mapView"
-        android:text="Navigasi"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        >
+
+    </FrameLayout>
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editText2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:text="Name"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/mapView"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/mapView"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/mapView"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/mapView"-->
+    <!--        app:layout_constraintVertical_bias="0.120000005"-->
+    <!--        android:drawableRight="@drawable/button_search"-->
+    <!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonNavigasi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:enabled="false"-->
+<!--        android:text="Button"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/mapView"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/mapView"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/mapView"-->
+<!--        app:layout_constraintVertical_bias="0.90999997" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

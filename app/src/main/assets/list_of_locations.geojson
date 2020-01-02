@@ -1,0 +1,37 @@
+﻿{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gajah Mas Ban",
+        "hours": "6am - 5pm",
+        "phone": "(555) 555-4355",
+        "description": "unnamed.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        112.79650171260727,
+           -7.267954318158587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bengkel Chris",
+        "hours": "9am - 4pm",
+        "phone": "(555) 555-9430",
+        "description": "BLOGBENGKEL-BUKAUSAHAYUK-800x445.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        112.79528104485041,
+           -7.25931855246337
+        ]
+      }
+    }
+  ]
+}
