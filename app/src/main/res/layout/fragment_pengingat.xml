@@ -2,12 +2,85 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/layAtas"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pengingat"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        />
+        android:background="#FFFF">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectttttt3"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENGINGAT"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            ></TextView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layAtas"
+        android:background="@drawable/rectttttt2"
+        android:layout_marginTop="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/cuci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bubbles"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="8dp"
+            ></ImageView>
+        <TextView
+            android:id="@+id/textcuci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuci Motor Reguler"
+            android:layout_toRightOf="@id/cuci"
+            android:textSize="18sp"
+            android:textColor="#FFFF"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/textwaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setiap 2 Minggu"
+           android:layout_below="@id/textcuci"
+            android:textSize="16sp"
+            android:textColor="#FFFF"
+           android:layout_toRightOf="@id/cuci"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onklik"
+            android:layout_toRightOf="@id/cuci"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            ></ImageView>
+    </RelativeLayout>
+
 
 </RelativeLayout>
