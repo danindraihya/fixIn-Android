@@ -80,7 +80,22 @@
             android:layout_marginLeft="100dp"
             android:layout_marginTop="25dp"
             ></ImageView>
-    </RelativeLayout>
 
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/add1"></ImageView>
+
+</RelativeLayout>
 
 </RelativeLayout>
